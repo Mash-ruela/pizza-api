@@ -1,0 +1,110 @@
+{
+  "info": {
+    "name": "Pizza API Challenge",
+    "_postman_id": "12345678-abcd-4321-efgh-1234567890ab",
+    "description": "Postman collection for testing Pizza Restaurant API Challenge",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+
+    {
+      "name": "GET /",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5555/",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "5555",
+          "path": [""]
+        }
+      }
+    },
+
+    {
+      "name": "GET /pizzas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5555/pizzas",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "5555",
+          "path": ["pizzas"]
+        }
+      }
+    },
+
+    {
+      "name": "GET /restaurants",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5555/restaurants",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "5555",
+          "path": ["restaurants"]
+        }
+      }
+    },
+
+    {
+      "name": "GET /restaurants/1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5555/restaurants/1",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "5555",
+          "path": ["restaurants", "1"]
+        }
+      }
+    },
+
+    {
+      "name": "DELETE /restaurants/3",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5555/restaurants/3",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "5555",
+          "path": ["restaurants", "3"]
+        }
+      }
+    },
+
+    {
+      "name": "POST /restaurant_pizzas",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"price\": 12,\n  \"pizza_id\": 2,\n  \"restaurant_id\": 1\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5555/restaurant_pizzas",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "5555",
+          "path": ["restaurant_pizzas"]
+        }
+      }
+    }
+
+  ]
+}

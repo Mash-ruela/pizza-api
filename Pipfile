@@ -5,8 +5,10 @@ name = "pypi"
 
 [packages]
 flask = "*"
-flask-sqlalchemy = "*"
-flask-migrate = "*"
+flask-sqlalchemy = "==3.1.1"
+flask-migrate = "==4.0.5"
+sqlalchemy-serializer = "==1.4.1"
+greenlet = "==3.1.1"
 
 [dev-packages]
 
